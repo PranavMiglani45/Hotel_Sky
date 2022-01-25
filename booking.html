@@ -1,0 +1,93 @@
+<!doctype>
+<html>
+<style>
+body{font-family:arial;background-image:url("https://www.smartertravel.com/uploads/2012/03/hotel-bed-swan-towel.jpg");}
+p{font-size:27px;font-weight:bold;}
+table{font-family:arial;font-size:20px;padding:10px 10px;}
+.button{color:white;width:30%;border:none;background-color:red;padding:10px 10px;font-size:15px;}
+#para{position:relative;top:70px; color: purple;}
+</style>
+
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="home.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="logo">
+	<h1 align="center" color="aqua"><a id="title" href="home.html"  >Hotel Sky</a></h1>
+	<img src="https://images.squarespace-cdn.com/content/v1/55cfb535e4b061baebe310df/1587472623697-IC8B3J3ZIZI0AMIE7U8G/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/sky+photo+for+website+home+page.jpeg?format=2500w" width="200px" height="100px" id="image">
+</div>
+
+
+<header align="left">
+	<ul type="none" >
+		<li ><a href="home.html">HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="contactus.html">CONTACT US</a></li>
+		<li><a href="booking.html">BOOK NOW</a></li>
+		<li><a href="signup.html">LOGIN/ </a> <a href="sign.html">SIGNUP</a><span id = "user">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.ytimg.com/vi/qoPg72wCgp8/maxresdefault.jpg" width="50" height="30"></span></li>
+	</ul>
+	
+</header>
+<form style="margin: 15%;" action="pay.html">
+	<b>
+Name:<br><input type="text" required placeholder="Enter your name"  size=50>
+<br>
+Email ID:<br><input type="email" required placeholder="Enter your email adress" size=50>
+<br>
+Phone Number:<br><input type="number" required placeholder="xxx-xxx-xxxx" size=50><br>
+check in: <br><input type="date" size=50><br>
+check out:<br><input type="date" size=50><br>
+Adults:<br><input type="number"value="1" min="1" max="3"  size=50>
+<br>Children:<br><input type="number"value="0" min="0" max="6"  size=25><br><br>
+<label>Type of Rooms:</label><br>
+<h5>you have to choose one: </h5>
+<select id="mySelect" onchange="myFunc()">
+	<option value="1">Single: A room assigned to one person. May have one or more beds.</option>
+	<option value="2">Double: A room assigned to two people. May have one or more beds.</option>
+	<option value="3" >Triple: A room assigned to three people. May have two or more beds.</option>
+	<option value="4">Queen: A room with a queen-sized bed. May be occupied by one or more people.</option>
+	<option value="5">King: A room with a king-sized bed. May be occupied by one or more people.</option>
+</select><br>
+<p id="demo" style="color: red;"></p><br>
+<input type="submit" name="" value="Proceed to pay" style="background: white; text-decoration-color: white; width: 105px;height: 30px;" >
+
+</b>
+</form>
+
+<script >
+	function myFunc() {
+  var x = document.getElementById("mySelect");
+  var k = x.options[x.selectedIndex].value;
+  var a;
+  if(k==1){
+  	a=2000;
+  }
+ else if(k==2)
+  {
+  	a=3000;
+  }
+else if(k==3)
+{
+	a=3500;
+}
+else if(k==4)
+{
+	a=4000;
+}
+else
+{
+	a=5000;
+}
+	document.getElementById("demo").innerHTML="Total amount you have to pay is Rs."+ ""+a;
+	
+}
+
+
+</script>
+</body>
+
+</html>

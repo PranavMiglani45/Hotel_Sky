@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+    <link rel="stylesheet" href="home.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:arial;}
+.a{
+  background: black;
+}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+.a
+{
+  margin: 10%;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <script >
+    function fun()
+    {
+      alert("successfully Login");
+    }
+  </script>
+<div class="logo">
+  <h1 align="center" color="aqua"><a id="title" href="home.html"  >Hotel Sky</a></h1>
+  <img src="https://images.squarespace-cdn.com/content/v1/55cfb535e4b061baebe310df/1587472623697-IC8B3J3ZIZI0AMIE7U8G/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/sky+photo+for+website+home+page.jpeg?format=2500w" width="200px" height="100px" id="image">
+</div>
+
+
+<header align="left">
+  <ul type="none" >
+    <li ><a href="home.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="contactus.html">CONTACT US</a></li>
+    <li><a href="booking.html">BOOK NOW</a></li>
+    <li><a href="signup.html">LOGIN/ </a> <a href="sign.html">SIGNUP</a><span id = "user">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.ytimg.com/vi/qoPg72wCgp8/maxresdefault.jpg" width="50" height="30"></span></li>
+  </ul>
+  
+</header>
+<div class="a">
+<h2>Login Form</h2>
+
+<form action="home.html" method="post">
+  <div class="imgcontainer">
+    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit" onclick="fun()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
+</body>
+</html>
